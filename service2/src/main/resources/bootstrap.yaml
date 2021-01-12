@@ -12,5 +12,5 @@ spring:
       config:
         server-addr: 106.14.8.213:8848
         file-extension: yaml
-        namespace: 6edf1ae8-3fa2-4ac1-87ae-4398fd84e011
-        group: TEST_GROUP
+        namespace: 6edf1ae8-3fa2-4ac1-87ae-4398fd84e011 # 不指定,默认为空
+        group: TEST_GROUP # 不指定默认为DEFAULT_GROUP
