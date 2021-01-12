@@ -1,0 +1,16 @@
+server:
+  port: 56011
+
+# 缺少了的data id为spring.application.name
+# 和spring.cloud.file-extension拼接而成
+spring:
+  application:
+    name: service2
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 106.14.8.213:8848
+        file-extension: yaml
+        namespace: 6edf1ae8-3fa2-4ac1-87ae-4398fd84e011
+        group: TEST_GROUP
