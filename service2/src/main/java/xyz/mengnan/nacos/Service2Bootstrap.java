@@ -11,18 +11,27 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class Service2Bootstrap {
-  public static void main(String[] args) {
-    SpringApplication.run(Service2Bootstrap.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(Service2Bootstrap.class, args);
+    }
 
-  @Value("${common.name}")
-  private String config;
+    @Value("${common.name}")
+    private String config;
 
-  @Autowired
-  private ConfigurableApplicationContext applicationContext;
+    @Autowired
+    private ConfigurableApplicationContext applicationContext;
 
-  @GetMapping("/config")
-  public String getConfig() {
-    return applicationContext.getEnvironment().getProperty("common.name");
-  }
+    @GetMapping("/config")
+    public String getConfig() {
+        return applicationContext.getEnvironment().getProperty("common.name");
+    }
+
+    @GetMapping("/config2")
+    public String getConfig2() {
+        String age = applicationContext.getEnvironment().getProperty("common.age");
+        String boy = applicationContext.getEnvironment().getProperty("common.boy");
+        String dog = applicationContext.getEnvironment().getProperty("common.dog");
+        return age + "---" + boy + "---" + dog;
+    }
+
 }
