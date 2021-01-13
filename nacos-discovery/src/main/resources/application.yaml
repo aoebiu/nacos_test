@@ -1,0 +1,10 @@
+server:
+  port: 56010
+
+spring:
+  application:
+    name: quickerstart-provider
+  cloud:
+    nacos:
+      discovery:
+        secret-key: 106.14.8.213:8848
