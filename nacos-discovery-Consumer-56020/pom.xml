@@ -9,18 +9,27 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>nacos-discovery</artifactId>
+    <artifactId>nacos-discovery-Consumer-56020</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>../nacos-micro-service</module>
+    </modules>
+
     <dependencies>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery
             </artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
+
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -32,5 +41,4 @@
             <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
-
 </project>

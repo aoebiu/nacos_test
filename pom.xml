@@ -8,9 +8,10 @@
     <artifactId>nacos_springcloud</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>service</module>
+        <module>service1</module>
         <module>service2</module>
-        <module>nacos-discovery</module>
+        <module>nacos-discovery-Consumer-56020</module>
+        <module>nacos-discovery-Provider-56011</module>
     </modules>
     <packaging>pom</packaging>
 

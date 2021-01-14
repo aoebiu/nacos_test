@@ -3,8 +3,8 @@ server:
 
 spring:
   application:
-    name: quickerstart-provider
+    name: quickstart-provider
   cloud:
     nacos:
       discovery:
-        secret-key: 106.14.8.213:8848
+        server-addr: 106.14.8.213:8848
